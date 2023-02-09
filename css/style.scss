@@ -45,19 +45,29 @@ main {
     display: flex;
     flex-direction: column;
 
-    img {
-      margin: auto;
-      width: 167px;
-      height: 217px;
-    }
+    .main-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-    h2 {
-      font-family: $main-font;
-      font-size: 1.8rem;
-      font-weight: normal;
-      line-height: 30px;
-      text-align: center;
-      color: #fff;
+      img {
+        width: 167px;
+        height: 217px;
+      }
+
+      h2 {
+        margin: 0 34px;
+        font-family: $main-font;
+        font-size: 1.8rem;
+        font-weight: normal;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+      }
+
+      p {
+        display: none;
+      }
     }
 
     .main-buttons {
@@ -138,7 +148,7 @@ main {
       div {
         display: flex;
         gap: 23px;
-        padding: 19px;
+        padding: 15px;
         align-items: center;
         background: #333;
 
@@ -146,10 +156,15 @@ main {
           width: 30px;
           height: 31px;
         }
+        div {
+          h3 {
+            display: none;
+          }
 
-        p {
-          font-family: $second-font;
-          font-size: 0.95rem;
+          p {
+            font-family: $second-font;
+            font-size: 0.9rem;
+          }
         }
 
         &:last-child {
@@ -444,6 +459,126 @@ footer {
         &:hover {
           text-decoration: underline;
         }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 728px) {
+  header {
+    padding: 28px 50px;
+  }
+
+  main {
+    padding: 0px 50px;
+    .main-content {
+      display: flex;
+
+      .main-title {
+        display: flex;
+        flex-direction: row-reverse;
+
+        img {
+          width: 500px;
+          height: 321px;
+        }
+
+        div {
+          h2 {
+            text-align: left;
+            font-size: 2.8rem;
+            line-height: 38px;
+            margin: 0;
+          }
+
+          p {
+            display: flex;
+            font-family: $second-font;
+            font-size: 1.1rem;
+            color: #9f9f9f;
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .main-buttons {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+        padding: 0 30px;
+        margin-top: -20px;
+
+        a {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    .statistics {
+      .statistic {
+        padding: 10px 52px;
+        display: flex;
+        justify-content: space-between;
+        h3 {
+          font-size: 2rem;
+          margin-top: 5px;
+        }
+      }
+
+      article {
+        div {
+          padding: 10px 52px;
+
+          img {
+            margin: 40px 45px 40px 10px;
+
+            width: 50px;
+            height: 50px;
+          }
+
+          div {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+
+            h3 {
+              display: block;
+              font-family: $main-font;
+              font-weight: normal;
+            }
+
+            p {
+              margin-top: -25px;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .about-us {
+      display: flex;
+      flex-direction: row-reverse;
+
+      img {
+        width: 317px;
+        height: 260px;
+        margin-right: 38px;
+      }
+
+      h3 {
+        font-size: 18px;
+        margin-top: 18px;
+      }
+
+      h2 {
+        font-size: 38px;
+        line-height: 38px;
+      }
+
+      p {
+        font-size: 14px;
+        text-align: left;
       }
     }
   }

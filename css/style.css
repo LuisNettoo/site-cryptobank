@@ -36,18 +36,26 @@ main .main-content {
   display: flex;
   flex-direction: column;
 }
-main .main-content img {
-  margin: auto;
+main .main-content .main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .main-content .main-title img {
   width: 167px;
   height: 217px;
 }
-main .main-content h2 {
+main .main-content .main-title h2 {
+  margin: 0 34px;
   font-family: "Koulen", cursive;
   font-size: 1.8rem;
   font-weight: normal;
   line-height: 30px;
   text-align: center;
   color: #fff;
+}
+main .main-content .main-title p {
+  display: none;
 }
 main .main-content .main-buttons {
   display: flex;
@@ -117,7 +125,7 @@ main .statistics article {
 main .statistics article div {
   display: flex;
   gap: 23px;
-  padding: 19px;
+  padding: 15px;
   align-items: center;
   background: #333;
 }
@@ -125,9 +133,12 @@ main .statistics article div img {
   width: 30px;
   height: 31px;
 }
-main .statistics article div p {
+main .statistics article div div h3 {
+  display: none;
+}
+main .statistics article div div p {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 main .statistics article div:last-child {
   border-radius: 0 0 30px 30px;
@@ -375,4 +386,99 @@ footer .social-medias .social-media a {
 }
 footer .social-medias .social-media a:hover {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 728px) {
+  header {
+    padding: 28px 50px;
+  }
+  main {
+    padding: 0px 50px;
+  }
+  main .main-content {
+    display: flex;
+  }
+  main .main-content .main-title {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  main .main-content .main-title img {
+    width: 500px;
+    height: 321px;
+  }
+  main .main-content .main-title div h2 {
+    text-align: left;
+    font-size: 2.8rem;
+    line-height: 38px;
+    margin: 0;
+  }
+  main .main-content .main-title div p {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    color: #9f9f9f;
+    margin-top: 10px;
+  }
+  main .main-content .main-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 0 30px;
+    margin-top: -20px;
+  }
+  main .main-content .main-buttons a {
+    font-size: 1.1rem;
+  }
+  main .statistics .statistic {
+    padding: 10px 52px;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .statistics .statistic h3 {
+    font-size: 2rem;
+    margin-top: 5px;
+  }
+  main .statistics article div {
+    padding: 10px 52px;
+  }
+  main .statistics article div img {
+    margin: 40px 45px 40px 10px;
+    width: 50px;
+    height: 50px;
+  }
+  main .statistics article div div {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  main .statistics article div div h3 {
+    display: block;
+    font-family: "Koulen", cursive;
+    font-weight: normal;
+  }
+  main .statistics article div div p {
+    margin-top: -25px;
+    font-size: 1rem;
+  }
+  main .about-us {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  main .about-us img {
+    width: 317px;
+    height: 260px;
+    margin-right: 38px;
+  }
+  main .about-us h3 {
+    font-size: 18px;
+    margin-top: 18px;
+  }
+  main .about-us h2 {
+    font-size: 38px;
+    line-height: 38px;
+  }
+  main .about-us p {
+    font-size: 14px;
+    text-align: left;
+  }
 }/*# sourceMappingURL=style.css.map */
