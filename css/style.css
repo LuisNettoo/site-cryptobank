@@ -294,4 +294,18 @@ main .cards-plans article a {
   text-decoration: none;
   color: #fff;
   background-color: #282832;
+}
+main .questions {
+  font-family: "Koulen", cursive;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 0 16px;
+}
+main .questions .question {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  background-color: #4225f2;
+  border-radius: 30px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */

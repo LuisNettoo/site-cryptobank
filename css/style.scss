@@ -351,4 +351,20 @@ main {
       }
     }
   }
+
+  .questions {
+    font-family: $main-font;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 0 16px;
+
+    .question {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 15px;
+      background-color: #4225f2;
+      border-radius: 30px;
+      margin-bottom: 10px;
+    }
+  }
 }
