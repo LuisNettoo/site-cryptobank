@@ -129,6 +129,9 @@ main .statistics article div p {
   font-family: "Montserrat", sans-serif;
   font-size: 0.95rem;
 }
+main .statistics article div:last-child {
+  border-radius: 0 0 30px 30px;
+}
 main .about-us {
   margin-top: 28px;
   font-family: "Koulen", cursive;

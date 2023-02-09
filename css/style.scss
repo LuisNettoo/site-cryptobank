@@ -151,6 +151,10 @@ main {
           font-family: $second-font;
           font-size: 0.95rem;
         }
+
+        &:last-child {
+          border-radius: 0 0 30px 30px;
+        }
       }
     }
   }
