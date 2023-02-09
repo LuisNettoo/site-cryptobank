@@ -68,10 +68,19 @@ main .main-content .main-buttons a {
 main .main-content .main-buttons .btn-primary {
   background: #4225f2;
   padding: 3px 20px;
+  transition: ease 500ms;
+}
+main .main-content .main-buttons .btn-primary:hover {
+  background-color: #3422a8;
 }
 main .main-content .main-buttons .btn-second {
   border: 2px solid #fff;
   padding: 3px 43px;
+  transition: ease 500ms;
+}
+main .main-content .main-buttons .btn-second:hover {
+  color: #1d1d27;
+  background-color: white;
 }
 main .statistics {
   margin-top: 66px;

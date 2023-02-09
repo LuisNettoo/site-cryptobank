@@ -80,11 +80,22 @@ main {
       .btn-primary {
         background: #4225f2;
         padding: 3px 20px;
+        transition: ease 500ms;
+
+        &:hover {
+          background-color: #3422a8;
+        }
       }
 
       .btn-second {
         border: 2px solid #fff;
         padding: 3px 43px;
+        transition: ease 500ms;
+
+        &:hover {
+          color: #1d1d27;
+          background-color: white;
+        }
       }
     }
   }
