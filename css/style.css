@@ -338,6 +338,9 @@ footer .menu a {
   color: #fff;
   margin-bottom: 15px;
 }
+footer .menu a:hover {
+  text-decoration: underline;
+}
 footer .social-medias {
   display: flex;
   flex-direction: column;
@@ -352,7 +355,12 @@ footer .social-medias .social-media {
 footer .social-medias .social-media img {
   width: 44px;
 }
-footer .social-medias .social-media span {
+footer .social-medias .social-media a {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+}
+footer .social-medias .social-media a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */

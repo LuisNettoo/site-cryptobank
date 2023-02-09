@@ -398,6 +398,10 @@ footer {
       text-decoration: none;
       color: #fff;
       margin-bottom: 15px;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -416,9 +420,15 @@ footer {
         width: 44px;
       }
 
-      span {
+      a {
         font-family: $roboto-font;
         font-size: 1.2rem;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
