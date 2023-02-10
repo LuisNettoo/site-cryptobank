@@ -481,4 +481,9 @@ footer .social-medias .social-media a:hover {
     font-size: 14px;
     text-align: left;
   }
+  main .resources article {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */
