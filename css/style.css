@@ -423,8 +423,8 @@ footer .social-medias .social-media a:hover {
     display: flex;
     justify-content: flex-start;
     gap: 20px;
-    padding: 0 30px;
-    margin-top: -20px;
+    padding: 0 0;
+    margin: -20px 0 0 0;
   }
   main .main-content .main-buttons a {
     font-size: 1.1rem;
@@ -435,7 +435,7 @@ footer .social-medias .social-media a:hover {
     justify-content: space-between;
   }
   main .statistics .statistic h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-top: 5px;
   }
   main .statistics article div {
@@ -481,9 +481,56 @@ footer .social-medias .social-media a:hover {
     font-size: 14px;
     text-align: left;
   }
+  main .resources .title h3 {
+    font-size: 2rem;
+  }
+  main .resources .title h2 {
+    font-size: 3rem;
+    line-height: 3.3rem;
+  }
   main .resources article {
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 12px;
+  }
+  main .cards-plans h2 {
+    font-size: 3rem;
+  }
+  main .cards-plans article {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  main .cards-plans article .card-plan {
+    max-width: 380px;
+  }
+  main .cards-plans article .card-plan:nth-child(2) {
+    max-width: 430px;
+  }
+  main .questions {
+    padding: 0;
+  }
+  main .questions .question {
+    font-size: 1.8rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .download-on {
+    width: 100%;
+    height: 100%;
+  }
+  footer .menu a {
+    font-size: 1rem;
+  }
+  footer .social-medias .social-media img {
+    width: 40px;
+  }
+  footer .social-medias .social-media a {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
