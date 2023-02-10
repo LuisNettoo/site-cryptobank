@@ -614,9 +614,34 @@ footer {
 
         .card-plan {
           max-width: 380px;
+          height: 500px;
 
           &:nth-child(2) {
             max-width: 430px;
+            h3 {
+              font-size: 2.5rem;
+            }
+
+            .price-per-month {
+              .price {
+                font-size: 3.5rem;
+              }
+
+              .for-month {
+                font-size: 1.3rem;
+              }
+            }
+
+            .plan-benefits {
+              display: flex;
+              flex-direction: column;
+              gap: 0px;
+
+              a {
+                margin: auto;
+                width: min-content;
+              }
+            }
           }
         }
       }
