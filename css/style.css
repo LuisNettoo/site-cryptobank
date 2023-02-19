@@ -553,4 +553,25 @@ footer .social-medias .social-media a:hover {
   footer .social-medias .social-media a {
     font-size: 1rem;
   }
+}
+@media screen and (min-width: 1200px) {
+  main .main-content .main-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .main-content .main-title img {
+    width: 472px;
+    height: 613px;
+  }
+  main .main-content .main-title div {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+  }
+  main .main-content .main-title div .main-buttons {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }/*# sourceMappingURL=style.css.map */
