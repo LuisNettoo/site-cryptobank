@@ -559,8 +559,15 @@ footer .social-medias .social-media a:hover {
   }
 }
 @media screen and (min-width: 1200px) {
+  header {
+    padding: 10px 80px;
+  }
+  header img {
+    width: 44px;
+    height: 62px;
+  }
   main {
-    padding: 80px;
+    padding: 0 80px;
   }
   main .main-content .main-title {
     display: flex;
@@ -634,7 +641,26 @@ footer .social-medias .social-media a:hover {
   main .resources article {
     display: flex;
   }
-  footer {
-    display: none;
+  main .resources article .box-info img {
+    width: 50px;
+    height: 52px;
+  }
+  main .resources article .box-info h2 {
+    font-size: 1.5rem;
+  }
+  main .resources article .box-info p {
+    font-size: 1rem;
+  }
+  main .cards-plans article {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+  }
+  main .cards-plans article .card-plan h3 {
+    font-size: 32px;
+  }
+  main .cards-plans article .card-plan:nth-child(2) {
+    height: -moz-min-content;
+    height: min-content;
   }
 }/*# sourceMappingURL=style.css.map */

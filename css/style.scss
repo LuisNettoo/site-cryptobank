@@ -54,6 +54,7 @@ main {
         width: 167px;
         height: 217px;
       }
+
       > div {
         h2 {
           margin: 0 34px;
@@ -692,8 +693,17 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
+  header {
+    padding: 10px 80px;
+    img {
+      width: 44px;
+      height: 62px;
+    }
+  }
+
   main {
-    padding: 80px;
+    padding: 0 80px;
+
     .main-content {
       .main-title {
         display: flex;
@@ -787,11 +797,40 @@ footer {
     .resources {
       article {
         display: flex;
+
+        .box-info {
+          img {
+            width: 50px;
+            height: 52px;
+          }
+
+          h2 {
+            font-size: 1.5rem;
+          }
+
+          p {
+            font-size: 1rem;
+          }
+        }
       }
     }
-  }
 
-  footer {
-    display: none;
+    .cards-plans {
+      article {
+        display: flex;
+        flex-direction: row;
+        gap: 45px;
+
+        .card-plan {
+          h3 {
+            font-size: 32px;
+          }
+
+          &:nth-child(2) {
+            height: min-content;
+          }
+        }
+      }
+    }
   }
 }
